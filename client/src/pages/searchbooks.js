@@ -146,5 +146,5 @@ const SearchBooks = () => {
   );
 };
 
-export default SearchBooks;
+export default { SearchBooks };
 //name changed
