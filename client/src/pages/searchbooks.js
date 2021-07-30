@@ -11,15 +11,9 @@ import {
 
 import Auth from "../utils/auth";
 // import { saveBook, searchGoogleBooks } from '../utils/API';
-<<<<<<< HEAD
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 import { useMutation } from '@apollo/react-hooks';
 import { SAVE_BOOK } from '../utils/mutation';
-=======
-import { saveBookIds, getSavedBookIds } from "../utils/localStorage";
-import { useMutation } from "@apollo/react-hooks";
-import { SAVE_BOOK } from "../utils/mutations";
->>>>>>> 7a5d3f02b100bc5403eee0de26d363b7073104a0
 
 const SearchBooks = () => {
   // create state for holding returned google api data
@@ -172,7 +166,3 @@ const SearchBooks = () => {
 };
 
 export default SearchBooks;
-<<<<<<< HEAD
-//name changed
-=======
->>>>>>> 7a5d3f02b100bc5403eee0de26d363b7073104a0

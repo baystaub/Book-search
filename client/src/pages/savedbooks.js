@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
 import { QUERY_ME } from '../utils/queries';
@@ -6,21 +5,6 @@ import { REMOVE_BOOK } from '../utils/mutation';
 import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 import { useQuery, useMutation } from '@apollo/client';
-=======
-import React from "react";
-import {
-  Jumbotron,
-  Container,
-  CardColumns,
-  Card,
-  Button,
-} from "react-bootstrap";
-import { QUERY_ME } from "../utils/queries";
-import { REMOVE_BOOK } from "../utils/mutations";
-import Auth from "../utils/auth";
-import { removeBookId } from "../utils/localStorage";
-import { useQuery, useMutation } from "@apollo/client";
->>>>>>> 7a5d3f02b100bc5403eee0de26d363b7073104a0
 
 const SavedBooks = () => {
   const { loading, data } = useQuery(QUERY_ME);
