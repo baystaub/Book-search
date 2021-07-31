@@ -50,7 +50,24 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    
+    // addComment: async (parent, { thoughtId, commentText }, context) => {
+    //   if (context.user) {
+    //     return Thought.findOneAndUpdate(
+    //       { _id: thoughtId },
+    //       {
+    //         $addToSet: {
+    //           comments: { commentText, commentAuthor: context.user.username },
+    //         },
+    //       },
+    //       {
+    //         new: true,
+    //         runValidators: true,
+    //       }
+    //     );
+    //   }
+    //   throw new AuthenticationError('You need to be logged in!');
+    // },
+    // dont need the add comment section
     removeBook: async (parent, { bookId }, context) => {
       if (context.user) {
         const updatedUser = await User.findOneAndUpdate(
@@ -63,7 +80,24 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-   
+    // removeComment: async (parent, { thoughtId, commentId }, context) => {
+    //   if (context.user) {
+    //     return Thought.findOneAndUpdate(
+    //       { _id: thoughtId },
+    //       {
+    //         $pull: {
+    //           comments: {
+    //             _id: commentId,
+    //             commentAuthor: context.user.username,
+    //           },
+    //         },
+    //       },
+    //       { new: true }
+    //     );
+    //   }
+    //   throw new AuthenticationError('You need to be logged in!');
+    // },
+    // didnt need the remove comment
   },
 };
 
