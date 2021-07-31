@@ -12,7 +12,7 @@ import Auth from "../utils/auth";
 import { removeBookId } from "../utils/localStorage";
 import { useQuery, useMutation } from "@apollo/client";
 
-const SavedBooks = () => {
+const SavedBook = () => {
   const { loading, data } = useQuery(QUERY_ME);
   const [removeBook, { error }] = useMutation(REMOVE_BOOK);
 
@@ -93,4 +93,4 @@ const SavedBooks = () => {
   );
 };
 
-export default SavedBooks;
+export default SavedBook;
