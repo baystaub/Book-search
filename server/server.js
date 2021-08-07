@@ -2,11 +2,7 @@ const express = require('express');
 const path = require('path');
 const { ApolloServer } = require('apollo-server-express');
 const db = require('./config/connection');
-<<<<<<< HEAD
-const { typeDefs, resolvers } = require('./schema');
-=======
 const { typeDefs, resolvers } = require('./schemas');
->>>>>>> 2c8feec68b381b35f0c001b87296d71d273076ae
 const { authMiddleware } = require('./utils/auth');
 const app = express();
 
