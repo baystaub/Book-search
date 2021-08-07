@@ -14,7 +14,7 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
-    "@apollo/client": "^3.4.1",
+    "@apollo/client": "^3.4.5",
     "@apollo/react-hooks": "^4.0.0",
     "apollo-client": "^2.6.10",
     "bootstrap": "^5.1.0",
@@ -25,6 +25,7 @@
     "jwt-decode": "^3.1.2",
     "mongoose": "^5.13.5",
     "npm": "^7.20.5",
-    "react-bootstrap": "^1.6.1"
+    "react-bootstrap": "^1.6.1",
+    "ts-invariant": "^0.9.1"
   }
 }
