@@ -1,6 +1,6 @@
 // copied a template from class activity 26
 const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models');
+const User = require('../models');
 const { signToken } = require('../tils/auth');
 
 const resolvers = {
