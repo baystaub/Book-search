@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Search from "./pages/SearchBook";
-import Saved from "./pages/SavedBook";
+import SearchBook from "./pages/SearchBook";
+import SavedBook from "./pages/SavedBook";
 import Navbar from "./components/Navbar";
 import {
   ApolloClient,
@@ -10,6 +10,7 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
+import SavedBook from "./pages/SavedBook";
 // import from class act 28
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -37,8 +38,8 @@ function App() {
         <>
           <Navbar />
           <Switch>
-            <Route exact path="/" component={Search} />
-            <Route exact path="/saved" component={Saved} />
+            <Route exact path="/" component={SearchBook} />
+            <Route exact path="/saved" component={SavedBook} />
             <Route render={() => <h1 className="display-2">Wrong page!</h1>} />
           </Switch>
         </>
